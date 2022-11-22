@@ -5,7 +5,7 @@ app = express()
 //import cors here
 
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 //DB here
 
@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended: true}))
 
 
 //routes
-app.use("/data", routes.data)
+// app.use("/scripts", routes.scripts)
 
 
 
