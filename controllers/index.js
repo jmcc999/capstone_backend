@@ -1,4 +1,4 @@
 module.exports = {
-    Script: require('./scripts'),
-    User: require('./users'),
+    Script: require('./scripts.ctrls'),
+    User: require('./users.ctrls'),
 }

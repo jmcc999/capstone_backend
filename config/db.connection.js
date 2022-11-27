@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //connect to mongo
-const connectionStr = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/scripts';
+const connectionStr = process.env.MONGODB_URI
 
 //set up connection
 

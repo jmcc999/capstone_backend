@@ -3,7 +3,7 @@ require('dotenv').config()
 
 //external mods
 const express = require('express')
-
+const router = express.Router()
 const routes = require('./routes')
 
 //import cors
@@ -21,7 +21,7 @@ const MongoDBStore = require('connect-mongodb-session')(session)
 
 
 //express instance
-app = express()
+const app = express()
 
 //app.use & middleware here
 app.use(express.json())
@@ -75,12 +75,11 @@ const isAuthenticated = (req, res, next) => {
 
 
 app.get('/', function (req, res) {
-
     res.send('Stuff Goes Here')
-console.log("working")
+    console.log("working")
 })
 
-// app.use('/scripts', routes.scripts)
+app.use('/scripts', routes.scripts)
 app.use('/users', routes.users)
 
 //listener

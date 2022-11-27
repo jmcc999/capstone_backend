@@ -14,7 +14,8 @@ const index = (req, res) => {
 const create = (req, res) => {
     db.Script.create(req.body, (err, createdScript) => {
         if(err) return res.status(404).json({error: err.message})
-        return res.status(200).json(createdScript)  //  .json() will send proper headers in response so client knows it's json coming back
+        return res.status(200).json(createdScript) 
+//  .json() will send proper headers in response so client knows it's json coming back
     })
 }
 
@@ -51,3 +52,4 @@ module.exports = {
     destroy,
     update
 }
+
