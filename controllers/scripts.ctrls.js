@@ -53,3 +53,5 @@ module.exports = {
     update
 }
 
+// module.export = index
+
