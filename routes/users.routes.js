@@ -7,7 +7,7 @@ const ctrls = require('../controllers')
 
 /* http://localhost:3001/users */
 
-router.post('/signup', ctrls.users.signup)
+router.post('/register', ctrls.users.register)
 router.post('/login', ctrls.users.login)
 router.delete('/logout', ctrls.users.logout)
 
